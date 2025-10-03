@@ -1,0 +1,13 @@
+package com.plcoding.stockmarketapp.data.local
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "company_listings")
+data class CompanyListingEntity(
+    // these are the columns in the table
+    val name: String,
+    val symbol: String,
+    val exchange: String,
+    @PrimaryKey val id: Int? = null
+)
