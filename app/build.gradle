@@ -19,12 +19,13 @@ kotlin {
 }
 
 android {
-    compileSdk 32
+    namespace = "com.plcoding.stockmarketapp"
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.plcoding.stockmarketapp"
-        minSdk 21
-        targetSdk 32
+        minSdk 24
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
