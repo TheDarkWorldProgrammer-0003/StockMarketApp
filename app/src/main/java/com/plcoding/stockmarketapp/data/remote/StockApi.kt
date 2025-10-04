@@ -9,7 +9,8 @@ interface StockApi {
     @GET("query?function=LISTING_STATUS")
 
 // this function will return a response body
-    suspend fun getListings(@Query("apikey") apiKey: String) : ResponseBody
+    suspend fun getListings(@Query("apikey") apiKey: String = API_KEY
+    ) : ResponseBody
 
     companion object{
         const val API_KEY = "CPM63WT5RK3RUJJA" // this is my api key for alphavantage.co
