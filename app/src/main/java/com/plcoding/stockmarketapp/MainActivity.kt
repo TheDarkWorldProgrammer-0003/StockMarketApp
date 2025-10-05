@@ -9,7 +9,7 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.plcoding.stockmarketapp.ui.theme.StockMarketAppTheme
 import com.ramcosta.composedestinations.DestinationsNavHost
-import com.plcoding.stockmarketapp.presentation.NavGraphs // Or your specific presentation package
+// Or your specific presentation package
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
