@@ -26,6 +26,8 @@ class IntradayInfoParser @Inject constructor() : CSVParser<IntradayInfo> {
             }.filter {
                 it.date.dayOfMonth == LocalDate.now().minusDays(4).dayOfMonth
 
+            }.sortedBy {
+                it.date.hour
             }.also {
                 csvReader.close()
             }
